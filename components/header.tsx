@@ -3,6 +3,7 @@
 type HeaderProps = {
   branding: {
     logoText: string;
+    logoImage?: string;
   };
   whatsapp: {
     phoneNumber: string;
@@ -26,11 +27,24 @@ export function Header({ branding, whatsapp }: HeaderProps) {
         <div className="flex items-center gap-3">
           {/* White-label logo - easily replaceable */}
           <div className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center border border-primary/20">
-              <span className="text-primary font-bold text-xl">
-                {branding.logoText.charAt(0)}
-              </span>
-            </div>
+            {branding.logoImage ? (
+              <img
+                src={
+                  branding.logoImage.startsWith("http") ||
+                  branding.logoImage.startsWith("/")
+                    ? branding.logoImage
+                    : `/${branding.logoImage}`
+                }
+                alt={branding.logoText}
+                className="w-10 h-10 rounded-lg object-cover"
+              />
+            ) : (
+              <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center border border-primary/20">
+                <span className="text-primary font-bold text-xl">
+                  {branding.logoText.charAt(0)}
+                </span>
+              </div>
+            )}
             <span className="text-foreground font-semibold text-lg">
               {branding.logoText}
             </span>
