@@ -3,208 +3,197 @@ export const landingContent = {
     facebookPixelId: process.env.NEXT_PUBLIC_FACEBOOK_PIXEL_ID || "",
   },
   seo: {
-    title: "Tu Solución Ideal | Atención por WhatsApp",
+    title: "Seguridad 360 | Protección Integral para tu Hogar y Negocio",
     description:
-      "Obtén la mejor solución para tus necesidades. Atención personalizada, precios competitivos y respuesta inmediata por WhatsApp.",
+      "Alarmas y cámaras monitoreadas 24hs en Córdoba. Te asesoramos para encontrar la mejor protección para tu casa o negocio. Cotización gratuita.",
     keywords: [
-      "whatsapp",
-      "atención al cliente",
-      "servicio",
-      "consulta",
-      "asesoría",
+      "seguridad",
+      "alarmas",
+      "cámaras",
+      "monitoreo 24 horas",
+      "córdoba",
+      "protección hogar",
+      "seguridad negocios",
     ],
   },
   branding: {
-    logoText: "Your Brand",
-    logoImage: "vaquero.png", // Poner nombre del archivo con extension de la carpeta public, (ej: 'logo.png') o URL externa.
+    logoText: "Seguridad 360",
+    logoImage: "logo-seguridad360.png",
   },
   whatsapp: {
-    phoneNumber: "1234567890",
-    defaultMessage: "Hola! Me interesa conocer más sobre sus servicios",
-    buttonText: "Contactar",
+    phoneNumber: "5493515555555", // Actualizar con número real
+    defaultMessage: "Hola! Me interesa cotizar un sistema de seguridad para mi hogar/negocio",
+    buttonText: "Cotizar Gratis",
   },
   hero: {
-    headline: "La solución que estabas buscando",
+    headline: "Tu tranquilidad, nuestra prioridad",
     subheadline:
-      "Obtén información personalizada y resuelve todas tus dudas al instante. Contáctanos por WhatsApp.",
-    ctaPrimary: "Consultar por WhatsApp",
+      "Protegé tu hogar y tu negocio con tecnología de seguridad avanzada. Alarmas y cámaras monitoreadas 24hs. Cotización gratuita y sin compromiso.",
+    ctaPrimary: "Cotizar Sin Compromiso",
   },
   trustBadges: [
+    { icon: "shield" as const, text: "Monitoreo 24/7" },
     { icon: "clock" as const, text: "Respuesta inmediata" },
-    { icon: "shield" as const, text: "Atención confiable" },
-    { icon: "users" as const, text: "Miles de clientes satisfechos" },
+    { icon: "users" as const, text: "Familias protegidas" },
   ],
   benefits: [
     {
-      icon: "zap" as const,
-      title: "Atención personalizada",
-      description:
-        "Recibe asesoría especializada adaptada a tus necesidades específicas",
+      icon: "shield" as const,
+      title: "Protección Total",
+      description: "Sistemas de alarmas y cámaras que cubren cada rincón de tu propiedad",
     },
     {
       icon: "clock" as const,
-      title: "Disponibilidad 24/7",
-      description:
-        "Estamos aquí cuando nos necesites, cualquier día a cualquier hora",
+      title: "Monitoreo 24/7",
+      description: "Centro de monitoreo activo las 24 horas, los 365 días del año",
     },
     {
-      icon: "trending-up" as const,
-      title: "La mejor relación calidad-precio",
-      description:
-        "Obtén el máximo valor por tu inversión con nuestras soluciones",
+      icon: "camera" as const,
+      title: "Cámaras HD en Tiempo Real",
+      description: "Mirá tu hogar o negocio desde cualquier lugar con tu celular",
     },
     {
-      icon: "message-circle" as const,
-      title: "Respuestas rápidas",
-      description:
-        "No esperes días por una respuesta. Te atendemos al instante",
+      icon: "bell" as const,
+      title: "Alertas Instantáneas",
+      description: "Recibí notificaciones al instante ante cualquier movimiento sospechoso",
     },
     {
-      icon: "check-circle" as const,
-      title: "Proceso simple y ágil",
-      description:
-        "Sin trámites complicados. Hazlo fácil y rápido por WhatsApp",
+      icon: "tool" as const,
+      title: "Instalación Profesional",
+      description: "Técnicos certificados para una instalación rápida y sin complicaciones",
     },
     {
       icon: "heart" as const,
-      title: "Garantía de satisfacción",
-      description:
-        "Tu tranquilidad es nuestra prioridad. Estamos comprometidos contigo",
+      title: "Tranquilidad Garantizada",
+      description: "Cuidamos lo que más te importa: tu familia y tu patrimonio",
     },
   ],
-  featuresTitle: "¿Por qué elegirnos?",
-  featuresSubtitle: "Todo lo que necesitas para tomar la mejor decisión",
+  featuresTitle: "¿Por qué elegir Seguridad 360?",
+  featuresSubtitle: "Tecnología confiable y moderna para tu protección integral",
   metrics: [
     {
-      value: "5,000+",
-      label: "Clientes felices",
+      value: "500+",
+      label: "Hogares Protegidos",
       description: "Confían en nosotros",
     },
-    { value: "15 min", label: "Tiempo de respuesta", description: "Promedio" },
+    { value: "24/7", label: "Monitoreo Activo", description: "Todo el año" },
     {
-      value: "4.9★",
-      label: "Calificación",
-      description: "De nuestros clientes",
+      value: "15 min",
+      label: "Tiempo de Respuesta",
+      description: "Ante emergencias",
     },
     {
-      value: "98%",
-      label: "Satisfacción",
-      description: "Recomiendan nuestro servicio",
+      value: "100%",
+      label: "Compromiso",
+      description: "Con tu seguridad",
     },
   ],
-  metricsTitle: "Resultados probados",
-  metricsSubtitle: "Ve el impacto en el crecimiento de tu negocio",
+  metricsTitle: "Resultados que nos respaldan",
+  metricsSubtitle: "Números que demuestran nuestro compromiso con tu seguridad",
   whyChoose: [
     {
-      title: "Experiencia y profesionalismo",
-      description:
-        "Años de trayectoria respaldando la calidad de nuestro servicio",
+      title: "Las principales marcas del país",
+      description: "Trabajamos con los mejores equipos de seguridad del mercado argentino",
     },
     {
-      title: "Precios competitivos",
-      description: "Las mejores tarifas del mercado sin comprometer la calidad",
+      title: "Cotización gratuita y sin compromiso",
+      description: "Te asesoramos sin costo para encontrar la mejor solución para vos",
     },
     {
-      title: "Sin letra chica",
-      description: "Transparencia total. Lo que ves es lo que obtienes",
+      title: "Tecnología de última generación",
+      description: "Equipos modernos con conectividad a tu celular en tiempo real",
     },
     {
-      title: "Soluciones a medida",
-      description: "Adaptamos nuestro servicio a tus necesidades específicas",
+      title: "Atención personalizada",
+      description: "Entendemos tus necesidades y diseñamos un sistema a tu medida",
     },
     {
-      title: "Atención humana real",
-      description: "Habla con personas reales que entienden lo que necesitas",
+      title: "Soporte técnico permanente",
+      description: "Estamos siempre disponibles para resolver cualquier consulta",
     },
     {
-      title: "Compromiso garantizado",
-      description: "Tu satisfacción es nuestra máxima prioridad",
+      title: "Instalación rápida y profesional",
+      description: "Nuestro equipo técnico garantiza una instalación impecable",
     },
   ],
-  whyChooseTitle: "Nuestro compromiso contigo",
+  whyChooseTitle: "Nuestro compromiso con tu seguridad",
   whyChooseSubtitle:
-    "Nos diferenciamos por ofrecer la mejor experiencia desde el primer contacto hasta después de tu compra.",
+    "En Seguridad 360 nos diferenciamos por ofrecer protección integral con la mejor tecnología y atención humana real.",
   howItWorks: [
     {
       step: "1" as const,
-      title: "Contáctanos por WhatsApp",
-      description:
-        "Haz clic en el botón y cuéntanos qué necesitas. Es rápido y fácil.",
+      title: "Contactanos por WhatsApp",
+      description: "Escribinos y contanos qué querés proteger. Es rápido y sin compromiso.",
     },
     {
       step: "2" as const,
-      title: "Recibe asesoría personalizada",
-      description:
-        "Nuestro equipo te brindará toda la información que necesitas para decidir.",
+      title: "Recibí asesoramiento personalizado",
+      description: "Nuestro equipo te ayuda a elegir el sistema ideal para tu hogar o negocio.",
     },
     {
       step: "3" as const,
-      title: "Obtén tu solución",
-      description: "Procesa tu pedido o contratación de forma simple y segura.",
+      title: "Instalación y activación",
+      description: "Instalamos tu sistema y lo dejamos funcionando. ¡Listo para protegerte!",
     },
   ],
-  howItWorksTitle: "Cómo funciona",
-  howItWorksSubtitle:
-    "Tres pasos simples para comenzar a hacer crecer tu negocio",
+  howItWorksTitle: "¿Cómo funciona?",
+  howItWorksSubtitle: "Tres pasos simples para tener tu hogar o negocio protegido",
   finalCTA: {
-    headline: "¿Listo para dar el siguiente paso?",
-    subheadline:
-      "Únete a miles de clientes satisfechos que ya confiaron en nosotros",
-    buttonText: "Consultar ahora por WhatsApp",
+    headline: "¿Listo para proteger lo que más te importa?",
+    subheadline: "Unite a las familias y negocios que ya confían en Seguridad 360. Cotización gratuita.",
+    buttonText: "Cotizar Ahora por WhatsApp",
   },
-  ctaFooterText: "Configuración rápida • Sin compromiso • Comienza hoy",
+  ctaFooterText: "Sin compromiso • Cotización gratuita • Respuesta inmediata",
   testimonials: [
     {
-      name: "María González",
-      role: "Emprendedora",
+      name: "María Fernández",
+      role: "Madre de familia - Córdoba",
       content:
-        "Increíble servicio. Me ayudaron a resolver mi problema en menos de 24 horas. ¡Altamente recomendado!",
+        "Desde que instalamos las cámaras y la alarma, duermo tranquila. El monitoreo 24/7 me da una paz increíble. ¡Muy recomendado!",
     },
     {
-      name: "Carlos Rodríguez",
-      role: "Empresario",
+      name: "Carlos Mendoza",
+      role: "Dueño de comercio",
       content:
-        "La atención personalizada es excepcional. Se nota que realmente se preocupan por sus clientes.",
+        "Tenía miedo de dejar mi negocio solo. Con Seguridad 360 puedo ver todo desde mi celular. Excelente inversión.",
     },
     {
-      name: "Ana López",
-      role: "Profesional independiente",
+      name: "Ana y Roberto López",
+      role: "Matrimonio jubilado",
       content:
-        "Desde el primer contacto por WhatsApp supe que había encontrado la solución perfecta para mi negocio.",
+        "Nuestros hijos nos recomendaron Seguridad 360 y fue la mejor decisión. El equipo es muy profesional y atento.",
     },
   ],
   faqs: [
     {
-      question: "¿Cómo funciona el proceso?",
+      question: "¿Qué incluye el servicio de monitoreo 24/7?",
       answer:
-        "Es muy simple. Contáctanos por WhatsApp, cuéntanos tus necesidades, y nuestro equipo te brinda asesoría personalizada para encontrar la mejor solución.",
+        "Nuestro centro de monitoreo está activo las 24 horas. Ante cualquier alerta, verificamos la situación y contactamos a las autoridades o a vos inmediatamente.",
     },
     {
-      question: "¿Cuánto tiempo toma implementar?",
+      question: "¿Puedo ver las cámaras desde mi celular?",
       answer:
-        "Dependiendo de la complejidad, podemos tenerte funcionando en cuestión de horas o días. La mayoría de nuestros clientes están operativos en menos de 24 horas.",
+        "Sí, todas nuestras cámaras se conectan a una app que te permite ver tu hogar o negocio en tiempo real desde cualquier lugar del mundo.",
     },
     {
-      question: "¿Hay algún costo oculto?",
+      question: "¿Cuánto tiempo toma la instalación?",
       answer:
-        "No, somos completamente transparentes. El precio que ves es el precio final, sin costos adicionales ni letras chiquitas.",
+        "Dependiendo del sistema, la instalación puede completarse en 2 a 4 horas. Nuestros técnicos se encargan de todo.",
     },
     {
-      question: "¿Ofrecen soporte técnico?",
+      question: "¿Trabajan con todas las marcas de alarmas?",
       answer:
-        "Sí, ofrecemos soporte técnico completo. Estamos disponibles por WhatsApp para resolver cualquier duda o problema que puedas tener.",
+        "Trabajamos con las principales marcas del país, garantizando equipos de calidad con respaldo y garantía oficial.",
     },
     {
-      question: "¿Puedo cancelar en cualquier momento?",
-      answer:
-        "Claro que sí. No hay contratos forzados ni penalizaciones. Puedes cancelar cuando lo necesites.",
+      question: "¿La cotización tiene algún costo?",
+      answer: "No, la cotización es 100% gratuita y sin compromiso. Te asesoramos para que tomes la mejor decisión.",
     },
   ],
   faqTitle: "Preguntas frecuentes",
-  faqSubtitle: "Resolvemos tus dudas más comunes",
-  contactFormTitle: "Contáctanos",
-  contactFormSubtitle:
-    "Estamos aquí para ayudarte. Envíanos un mensaje y te responderemos lo antes posible.",
+  faqSubtitle: "Resolvemos tus dudas sobre seguridad",
+  contactFormTitle: "Contactanos",
+  contactFormSubtitle: "Dejanos tus datos y te contactamos para asesorarte sin compromiso.",
   contactFormLabels: {
     fullName: "Nombre y Apellido",
     email: "Email",
@@ -215,8 +204,8 @@ export const landingContent = {
   contactFormPlaceholders: {
     fullName: "Juan Pérez",
     email: "tu@email.com",
-    phone: "+54 9 11 1234 5678",
-    city: "Buenos Aires",
+    phone: "+54 9 351 123 4567",
+    city: "Córdoba",
     country: "Argentina",
   },
   contactFormValidation: {
@@ -233,114 +222,110 @@ export const landingContent = {
   },
   contactFormSuccess: "¡Mensaje enviado! Te contactaremos pronto.",
   contactFormWhatsapp: {
-    title: "¿Prefieres WhatsApp?",
+    title: "¿Preferís WhatsApp?",
     description:
-      "Para respuestas más rápidas, contáctanos directamente por WhatsApp. Estamos disponibles para chatear en tiempo real.",
+      "Para respuestas más rápidas, contactanos directamente por WhatsApp. Estamos disponibles para chatear en tiempo real.",
     buttonText: "Chatear por WhatsApp",
   },
   contactFormInfo: {
-    email: "Email: info@tuempresa.com",
+    email: "Email: info@seguridad360.ar",
     whatsapp: "WhatsApp: Disponible 24/7",
-    schedule: "Horario: Lunes a Domingo",
+    schedule: "Horario: Lunes a Sábado",
   },
-  pricingTitle: "Planes y precios",
-  pricingSubtitle:
-    "Elige el plan que mejor se adapte a tus necesidades. Todos incluyen soporte completo.",
+  pricingTitle: "Planes de Protección",
+  pricingSubtitle: "Elegí el plan que mejor se adapte a tus necesidades. Todos incluyen instalación y soporte.",
   pricingPlans: [
     {
-      name: "Básico",
-      price: "$29",
-      period: "por mes",
-      description: "Perfecto para comenzar",
+      name: "Hogar Básico",
+      price: "Consultá",
+      period: "precio",
+      description: "Ideal para departamentos",
       features: [
-        "Hasta 100 consultas mensuales",
-        "Soporte por WhatsApp",
-        "Dashboard básico",
-        "Reportes mensuales",
+        "Panel de alarma",
+        "2 sensores de movimiento",
+        "1 sirena interior",
+        "App para celular",
+        "Soporte técnico",
       ],
-      buttonText: "Comenzar gratis",
+      buttonText: "Consultar Precio",
     },
     {
-      name: "Profesional",
-      price: "$79",
-      period: "por mes",
-      description: "Para negocios en crecimiento",
+      name: "Hogar Completo",
+      price: "Consultá",
+      period: "precio",
+      description: "Para casas y familias",
       features: [
-        "Consultas ilimitadas",
-        "Soporte prioritario 24/7",
-        "Dashboard avanzado",
-        "Reportes en tiempo real",
-        "API access",
-        "Integraciones",
+        "Panel de alarma avanzado",
+        "4 sensores de movimiento",
+        "2 cámaras HD",
+        "Sirena exterior",
+        "Monitoreo 24/7",
+        "App con grabación",
       ],
       popular: true,
-      buttonText: "Comenzar prueba",
+      buttonText: "Consultar Precio",
     },
     {
-      name: "Empresarial",
-      price: "$199",
-      period: "por mes",
-      description: "Para grandes organizaciones",
+      name: "Negocio Seguro",
+      price: "Consultá",
+      period: "precio",
+      description: "Para comercios y empresas",
       features: [
-        "Todo lo del plan Profesional",
-        "Cuenta dedicada",
-        "SLA garantizado",
-        "Consultoría personalizada",
-        "Integraciones enterprise",
-        "Soporte telefónico",
+        "Sistema completo de alarmas",
+        "Cámaras HD ilimitadas",
+        "Control de acceso",
+        "Monitoreo 24/7 prioritario",
+        "Botón de pánico",
+        "Soporte dedicado",
       ],
-      buttonText: "Contactar ventas",
+      buttonText: "Consultar Precio",
     },
   ],
-  aboutTitle: "Sobre nosotros",
-  aboutSubtitle:
-    "Somos un equipo apasionado por ayudar a las empresas a crecer mediante soluciones innovadoras.",
-  aboutContent: `Desde nuestros inicios, nos hemos dedicado a proporcionar servicios de calidad excepcional. Nuestra misión es simplificar procesos complejos y ofrecer resultados que realmente importan.\n\nCon años de experiencia en el sector, entendemos los desafíos únicos que enfrentan las empresas modernas. Por eso, hemos desarrollado soluciones que no solo resuelven problemas inmediatos, sino que también preparan a nuestros clientes para el futuro.`,
+  aboutTitle: "Sobre Seguridad 360",
+  aboutSubtitle: "Somos un equipo apasionado por proteger lo que más te importa.",
+  aboutContent: `En Seguridad 360 nos dedicamos a brindar soluciones integrales de seguridad para hogares y negocios en Córdoba y alrededores.\n\nTrabajamos con las principales marcas del país y contamos con técnicos certificados que garantizan instalaciones profesionales. Nuestro compromiso es tu tranquilidad: por eso ofrecemos monitoreo 24/7 y atención personalizada en cada paso.`,
   aboutStats: [
     { value: "5+", label: "Años de experiencia" },
-    { value: "1000+", label: "Clientes satisfechos" },
-    { value: "99%", label: "Satisfacción" },
-    { value: "24/7", label: "Soporte disponible" },
+    { value: "500+", label: "Clientes protegidos" },
+    { value: "24/7", label: "Monitoreo activo" },
+    { value: "100%", label: "Compromiso" },
   ],
   newsletterTitle: "Mantente informado",
-  newsletterSubtitle:
-    "Suscríbete a nuestro newsletter y recibe las últimas actualizaciones, consejos y ofertas exclusivas.",
-  newsletterPlaceholder: "Ingresa tu email",
+  newsletterSubtitle: "Suscribite a nuestro newsletter y recibí consejos de seguridad y ofertas exclusivas.",
+  newsletterPlaceholder: "Ingresá tu email",
   newsletterButtonText: "Suscribirme",
   newsletterValidation: {
-    emailRequired: "Por favor ingresa tu email",
-    emailInvalid: "Por favor ingresa un email válido",
+    emailRequired: "Por favor ingresá tu email",
+    emailInvalid: "Por favor ingresá un email válido",
   },
   newsletterSuccess: "¡Gracias por suscribirte! Te mantendremos informado.",
-  newsletterDisclaimer:
-    "Sin spam, solo contenido valioso. Puedes darte de baja en cualquier momento.",
+  newsletterDisclaimer: "Sin spam, solo contenido valioso. Podés darte de baja en cualquier momento.",
   teamTitle: "Nuestro equipo",
-  teamSubtitle:
-    "Conoce al equipo detrás de nuestro éxito. Profesionales dedicados a tu satisfacción.",
+  teamSubtitle: "Profesionales dedicados a tu seguridad y tranquilidad.",
   teamMembers: [
     {
-      name: "María González",
-      role: "CEO & Fundadora",
-      bio: "Con más de 10 años de experiencia en tecnología y emprendimiento, lidera la visión estratégica de la compañía.",
+      name: "Equipo Técnico",
+      role: "Instalación y Soporte",
+      bio: "Técnicos certificados con amplia experiencia en sistemas de seguridad electrónica.",
     },
     {
-      name: "Carlos Rodríguez",
-      role: "CTO",
-      bio: "Experto en desarrollo de software y arquitectura de sistemas, asegura que nuestras soluciones sean robustas y escalables.",
+      name: "Centro de Monitoreo",
+      role: "Vigilancia 24/7",
+      bio: "Personal capacitado que monitorea tu propiedad las 24 horas del día, los 365 días del año.",
     },
     {
-      name: "Ana López",
-      role: "Directora de Operaciones",
-      bio: "Especialista en optimización de procesos y atención al cliente, garantiza una experiencia excepcional para todos.",
+      name: "Atención al Cliente",
+      role: "Asesoramiento",
+      bio: "Especialistas en encontrar la solución de seguridad perfecta para cada cliente.",
     },
   ],
   footerLinks: [
     {
-      title: "Servicio",
+      title: "Servicios",
       items: [
-        { label: "Cómo funciona", href: "#how-it-works" },
-        { label: "Precios", href: "#pricing" },
-        { label: "FAQ", href: "#faq" },
+        { label: "Alarmas", href: "#features" },
+        { label: "Cámaras", href: "#features" },
+        { label: "Monitoreo 24/7", href: "#how-it-works" },
       ],
     },
     {
@@ -348,7 +333,7 @@ export const landingContent = {
       items: [
         { label: "Sobre nosotros", href: "#about" },
         { label: "Contacto", href: "#contact" },
-        { label: "Blog", href: "#blog" },
+        { label: "Preguntas frecuentes", href: "#faq" },
       ],
     },
     {
@@ -356,13 +341,12 @@ export const landingContent = {
       items: [
         { label: "Política de privacidad", href: "#privacy" },
         { label: "Términos de servicio", href: "#terms" },
-        { label: "Cookies", href: "#cookies" },
       ],
     },
   ],
   footerBranding: {
-    logoText: "Your Brand",
-    description: "Tu solución ideal para atención personalizada por WhatsApp.",
+    logoText: "Seguridad 360",
+    description: "Protección integral para tu hogar y negocio. Alarmas y cámaras monitoreadas 24hs.",
   },
   footerCopyright: {
     text: "Todos los derechos reservados.",
@@ -374,9 +358,8 @@ export const landingContent = {
   },
   popup: {
     delay: 3000,
-    message: "¿Necesitas ayuda?",
-    description:
-      "Estamos aquí para asesorarte. Haz clic para chatear con nosotros.",
-    buttonText: "Iniciar conversación",
+    message: "¿Necesitás protección?",
+    description: "Cotizá tu sistema de seguridad sin compromiso. Estamos para asesorarte.",
+    buttonText: "Cotizar Gratis",
   },
-};
+}

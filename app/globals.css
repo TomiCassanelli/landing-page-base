@@ -1,38 +1,75 @@
 @import "tailwindcss";
+@import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
 
+/* Nuevos colores para Seguridad 360 - Verde bosque y crema */
 :root {
-  --background: #ffffff;
-  --foreground: #212529;
-  --card: color-mix(in srgb, #ffffff, #007bff 3%);
-  --card-foreground: #212529;
-  --popover: color-mix(in srgb, #ffffff, #007bff 3%);
-  --popover-foreground: #212529;
-  --primary: #007bff;
+  --background: #faf8f5;
+  --foreground: #1a1a1a;
+  --card: #ffffff;
+  --card-foreground: #1a1a1a;
+  --popover: #ffffff;
+  --popover-foreground: #1a1a1a;
+  --primary: #1b5e3b;
   --primary-foreground: #ffffff;
-  --secondary: #6c757d;
+  --secondary: #2d7a4e;
   --secondary-foreground: #ffffff;
-  --muted: color-mix(in srgb, #ffffff, #212529 5%);
-  --muted-foreground: color-mix(in srgb, #212529, transparent 40%);
-  --accent: color-mix(in srgb, #ffffff, #007bff 10%);
-  --accent-foreground: #007bff;
+  --muted: #f0ede8;
+  --muted-foreground: #5c5c5c;
+  --accent: #e8f5ec;
+  --accent-foreground: #1b5e3b;
   --destructive: #ef4444;
   --destructive-foreground: #ffffff;
-  --border: color-mix(in srgb, #212529, transparent 85%);
-  --input: color-mix(in srgb, #212529, transparent 85%);
-  --ring: #007bff;
+  --border: #e0dcd5;
+  --input: #e0dcd5;
+  --ring: #1b5e3b;
   --whatsapp-green: #25d366;
   --whatsapp-green-dark: #128c7e;
   --radius: 0.625rem;
-  --sidebar: color-mix(in srgb, #ffffff, #007bff 3%);
-  --sidebar-foreground: #212529;
-  --sidebar-primary: #007bff;
+  --sidebar: #ffffff;
+  --sidebar-foreground: #1a1a1a;
+  --sidebar-primary: #1b5e3b;
   --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: color-mix(in srgb, #ffffff, #007bff 10%);
-  --sidebar-accent-foreground: #007bff;
-  --sidebar-border: color-mix(in srgb, #212529, transparent 85%);
-  --sidebar-ring: #007bff;
+  --sidebar-accent: #e8f5ec;
+  --sidebar-accent-foreground: #1b5e3b;
+  --sidebar-border: #e0dcd5;
+  --sidebar-ring: #1b5e3b;
+}
+
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.145 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.145 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.985 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.396 0.141 25.723);
+  --destructive-foreground: oklch(0.637 0.237 25.331);
+  --border: oklch(0.269 0 0);
+  --input: oklch(0.269 0 0);
+  --ring: oklch(0.439 0 0);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(0.269 0 0);
+  --sidebar-ring: oklch(0.439 0 0);
 }
 
 @theme inline {
@@ -102,4 +139,109 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* Animaciones estilo Apple para scroll */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes countUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.animate-fade-in-scale {
+  animation: fadeInScale 0.8s ease-out forwards;
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 0.8s ease-out forwards;
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.8s ease-out forwards;
+}
+
+.animate-count-up {
+  animation: countUp 0.6s ease-out forwards;
+}
+
+/* Staggered delays */
+.delay-100 {
+  animation-delay: 100ms;
+}
+.delay-200 {
+  animation-delay: 200ms;
+}
+.delay-300 {
+  animation-delay: 300ms;
+}
+.delay-400 {
+  animation-delay: 400ms;
+}
+.delay-500 {
+  animation-delay: 500ms;
+}
+.delay-600 {
+  animation-delay: 600ms;
+}
+
+/* Initial state for animated elements */
+.animate-on-scroll {
+  opacity: 0;
+}
+
+.animate-on-scroll.is-visible {
+  opacity: 1;
 }
