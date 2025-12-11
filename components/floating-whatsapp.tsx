@@ -1,7 +1,8 @@
 "use client"
 
-import { MessageCircle, X } from "lucide-react"
+import { X } from "lucide-react"
 import { useState, useEffect } from "react"
+import { WhatsAppIcon } from "@/components/whatsapp-icon"
 
 type FloatingWhatsAppProps = {
   whatsapp: {
@@ -62,7 +63,7 @@ export function FloatingWhatsApp({ whatsapp, popup }: FloatingWhatsAppProps) {
 
             <div className="flex items-start gap-3">
               <div className="w-12 h-12 bg-whatsapp-green rounded-full flex items-center justify-center flex-shrink-0">
-                <MessageCircle className="w-6 h-6 text-white" />
+                <WhatsAppIcon size={24} />
               </div>
 
               <div className="flex-1">
@@ -70,8 +71,9 @@ export function FloatingWhatsApp({ whatsapp, popup }: FloatingWhatsAppProps) {
                 <p className="text-xs text-muted-foreground mb-3">{popup.description}</p>
                 <button
                   onClick={handlePopupClick}
-                  className="w-full bg-whatsapp-green hover:bg-whatsapp-green-dark text-white text-sm font-medium py-2 px-4 rounded-lg transition-colors"
+                  className="w-full bg-whatsapp-green hover:bg-whatsapp-green-dark text-white text-sm font-medium py-2 px-4 rounded-lg transition-colors flex items-center justify-center gap-2"
                 >
+                  <WhatsAppIcon size={16} />
                   {popup.buttonText}
                 </button>
               </div>
@@ -94,7 +96,7 @@ export function FloatingWhatsApp({ whatsapp, popup }: FloatingWhatsAppProps) {
         className="fixed bottom-6 right-6 z-50 w-16 h-16 bg-whatsapp-green hover:bg-whatsapp-green-dark rounded-full shadow-2xl flex items-center justify-center transition-all duration-300 hover:scale-110"
         aria-label="Contact us on WhatsApp"
       >
-        <MessageCircle className="w-8 h-8 text-white" />
+        <WhatsAppIcon size={32} />
 
         <span className="absolute -top-1 -right-1 w-4 h-4 bg-red-500 rounded-full border-2 border-background animate-pulse"></span>
       </button>
