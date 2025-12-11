@@ -21,7 +21,7 @@ export const landingContent = {
     logoImage: "logo-seguridad360.png",
   },
   whatsapp: {
-    phoneNumber: "5493515555555", // Actualizar con número real
+    phoneNumber: "15555555", // Actualizar con número real
     defaultMessage: "Hola! Me interesa cotizar un sistema de seguridad para mi hogar/negocio",
     buttonText: "Cotizar Gratis",
   },
