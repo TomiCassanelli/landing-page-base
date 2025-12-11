@@ -15,7 +15,7 @@ import { TeamSection } from "@/components/team-section"
 import { CTASection } from "@/components/cta-section"
 import { Footer } from "@/components/footer"
 import { landingContent } from "./content"
-import { Metadata } from "next"
+import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: landingContent.branding.logoText,
@@ -29,8 +29,61 @@ export const metadata: Metadata = {
 }
 
 export default function LandingPage() {
-  const { branding, whatsapp, hero, trustBadges, benefits, featuresTitle, featuresSubtitle, metrics, metricsTitle, metricsSubtitle, whyChoose, whyChooseTitle, whyChooseSubtitle, howItWorks, howItWorksTitle, howItWorksSubtitle, testimonials, faqs, faqTitle, faqSubtitle, contactFormTitle, contactFormSubtitle, contactFormLabels, contactFormPlaceholders, contactFormValidation, contactFormSubmit, contactFormSuccess, contactFormWhatsapp, contactFormInfo, pricingTitle, pricingSubtitle, pricingPlans, aboutTitle, aboutSubtitle, aboutContent, aboutStats, newsletterTitle, newsletterSubtitle, newsletterPlaceholder, newsletterButtonText, newsletterValidation, newsletterSuccess, newsletterDisclaimer, teamTitle, teamSubtitle, teamMembers, finalCTA, ctaFooterText, footerLinks, footerBranding, footerCopyright, footerLegal, popup } =
-    landingContent
+  const {
+    branding,
+    whatsapp,
+    hero,
+    trustBadges,
+    benefits,
+    featuresTitle,
+    featuresSubtitle,
+    metrics,
+    metricsTitle,
+    metricsSubtitle,
+    whyChoose,
+    whyChooseTitle,
+    whyChooseSubtitle,
+    howItWorks,
+    howItWorksTitle,
+    howItWorksSubtitle,
+    testimonials,
+    faqs,
+    faqTitle,
+    faqSubtitle,
+    contactFormTitle,
+    contactFormSubtitle,
+    contactFormLabels,
+    contactFormPlaceholders,
+    contactFormValidation,
+    contactFormSubmit,
+    contactFormSuccess,
+    contactFormWhatsapp,
+    contactFormInfo,
+    pricingTitle,
+    pricingSubtitle,
+    pricingPlans,
+    aboutTitle,
+    aboutSubtitle,
+    aboutContent,
+    aboutStats,
+    newsletterTitle,
+    newsletterSubtitle,
+    newsletterPlaceholder,
+    newsletterButtonText,
+    newsletterValidation,
+    newsletterSuccess,
+    newsletterDisclaimer,
+    teamTitle,
+    teamSubtitle,
+    teamMembers,
+    finalCTA,
+    ctaFooterText,
+    footerLinks,
+    footerBranding,
+    footerCopyright,
+    footerLegal,
+    popup,
+  } = landingContent
 
   return (
     <div className="min-h-screen bg-background">
@@ -38,6 +91,18 @@ export default function LandingPage() {
       <main>
         <HeroSection hero={hero} trustBadges={trustBadges} whatsapp={whatsapp} />
         <FeaturesSection title={featuresTitle} subtitle={featuresSubtitle} benefits={benefits} />
+        <ContactFormSection
+          title={contactFormTitle}
+          subtitle={contactFormSubtitle}
+          formLabels={contactFormLabels}
+          formPlaceholders={contactFormPlaceholders}
+          validationMessages={contactFormValidation}
+          submitButton={contactFormSubmit}
+          successMessage={contactFormSuccess}
+          whatsappSection={contactFormWhatsapp}
+          contactInfo={contactFormInfo}
+          whatsapp={whatsapp}
+        />
         <MetricsSection title={metricsTitle} subtitle={metricsSubtitle} metrics={metrics} />
         <WhyChooseSection title={whyChooseTitle} subtitle={whyChooseSubtitle} reasons={whyChoose} />
         <HowItWorksSection title={howItWorksTitle} subtitle={howItWorksSubtitle} steps={howItWorks} />
@@ -45,16 +110,25 @@ export default function LandingPage() {
         <TeamSection title={teamTitle} subtitle={teamSubtitle} members={teamMembers} />
         <TestimonialsSection testimonials={testimonials} />
         <PricingSection title={pricingTitle} subtitle={pricingSubtitle} plans={pricingPlans} whatsapp={whatsapp} />
-        <FAQSection
-          title={faqTitle}
-          subtitle={faqSubtitle}
-          faqs={faqs}
+        <FAQSection title={faqTitle} subtitle={faqSubtitle} faqs={faqs} />
+        <NewsletterSection
+          title={newsletterTitle}
+          subtitle={newsletterSubtitle}
+          placeholder={newsletterPlaceholder}
+          buttonText={newsletterButtonText}
+          validationMessages={newsletterValidation}
+          successMessage={newsletterSuccess}
+          disclaimer={newsletterDisclaimer}
         />
-        <ContactFormSection title={contactFormTitle} subtitle={contactFormSubtitle} formLabels={contactFormLabels} formPlaceholders={contactFormPlaceholders} validationMessages={contactFormValidation} submitButton={contactFormSubmit} successMessage={contactFormSuccess} whatsappSection={contactFormWhatsapp} contactInfo={contactFormInfo} whatsapp={whatsapp} />
-        <NewsletterSection title={newsletterTitle} subtitle={newsletterSubtitle} placeholder={newsletterPlaceholder} buttonText={newsletterButtonText} validationMessages={newsletterValidation} successMessage={newsletterSuccess} disclaimer={newsletterDisclaimer} />
         <CTASection finalCTA={finalCTA} footerText={ctaFooterText} whatsapp={whatsapp} />
       </main>
-      <Footer branding={footerBranding} whatsapp={whatsapp} links={footerLinks} copyright={footerCopyright} legalLinks={footerLegal} />
+      <Footer
+        branding={footerBranding}
+        whatsapp={whatsapp}
+        links={footerLinks}
+        copyright={footerCopyright}
+        legalLinks={footerLegal}
+      />
       <FloatingWhatsApp whatsapp={whatsapp} popup={popup} />
     </div>
   )
