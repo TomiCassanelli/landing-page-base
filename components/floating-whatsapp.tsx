@@ -1,54 +1,51 @@
-"use client";
+"use client"
 
-import { MessageCircle, X } from "lucide-react";
-import { useState, useEffect } from "react";
+import { MessageCircle, X } from "lucide-react"
+import { useState, useEffect } from "react"
 
 type FloatingWhatsAppProps = {
   whatsapp: {
-    phoneNumber: string;
-    defaultMessage: string;
-  };
+    phoneNumber: string
+    defaultMessage: string
+  }
   popup: {
-    delay: number;
-    message: string;
-    description: string;
-    buttonText: string;
-  };
-};
+    delay: number
+    message: string
+    description: string
+    buttonText: string
+  }
+}
 
 export function FloatingWhatsApp({ whatsapp, popup }: FloatingWhatsAppProps) {
-  const [isPopupOpen, setIsPopupOpen] = useState(false);
-  const [hasSeenPopup, setHasSeenPopup] = useState(false);
+  const [isPopupOpen, setIsPopupOpen] = useState(false)
+  const [hasSeenPopup, setHasSeenPopup] = useState(false)
 
   useEffect(() => {
     const popupTimer = setTimeout(() => {
       if (!hasSeenPopup) {
-        setIsPopupOpen(true);
-        setHasSeenPopup(true);
+        setIsPopupOpen(true)
+        setHasSeenPopup(true)
       }
-    }, popup.delay);
+    }, popup.delay)
 
     return () => {
-      clearTimeout(popupTimer);
-    };
-  }, [hasSeenPopup, popup.delay]);
+      clearTimeout(popupTimer)
+    }
+  }, [hasSeenPopup, popup.delay])
 
   const handleClick = () => {
-    const encodedMessage = encodeURIComponent(whatsapp.defaultMessage);
-    window.open(
-      `https://wa.me/${whatsapp.phoneNumber}?text=${encodedMessage}`,
-      "_blank"
-    );
-  };
+    const encodedMessage = encodeURIComponent(whatsapp.defaultMessage)
+    window.open(`https://wa.me/${whatsapp.phoneNumber}?text=${encodedMessage}`, "_blank")
+  }
 
   const handlePopupClick = () => {
-    setIsPopupOpen(false);
-    handleClick();
-  };
+    setIsPopupOpen(false)
+    handleClick()
+  }
 
   const closePopup = () => {
-    setIsPopupOpen(false);
-  };
+    setIsPopupOpen(false)
+  }
 
   return (
     <>
@@ -64,20 +61,16 @@ export function FloatingWhatsApp({ whatsapp, popup }: FloatingWhatsAppProps) {
             </button>
 
             <div className="flex items-start gap-3">
-              <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
-                <MessageCircle className="w-6 h-6 text-primary-foreground" />
+              <div className="w-12 h-12 bg-whatsapp-green rounded-full flex items-center justify-center flex-shrink-0">
+                <MessageCircle className="w-6 h-6 text-white" />
               </div>
 
               <div className="flex-1">
-                <p className="font-semibold text-sm text-foreground mb-1">
-                  {popup.message}
-                </p>
-                <p className="text-xs text-muted-foreground mb-3">
-                  {popup.description}
-                </p>
+                <p className="font-semibold text-sm text-foreground mb-1">{popup.message}</p>
+                <p className="text-xs text-muted-foreground mb-3">{popup.description}</p>
                 <button
                   onClick={handlePopupClick}
-                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground text-sm font-medium py-2 px-4 rounded-lg transition-colors"
+                  className="w-full bg-whatsapp-green hover:bg-whatsapp-green-dark text-white text-sm font-medium py-2 px-4 rounded-lg transition-colors"
                 >
                   {popup.buttonText}
                 </button>
@@ -93,18 +86,18 @@ export function FloatingWhatsApp({ whatsapp, popup }: FloatingWhatsAppProps) {
       <button
         onClick={() => {
           if (!isPopupOpen) {
-            setIsPopupOpen(true);
+            setIsPopupOpen(true)
           } else {
-            handleClick();
+            handleClick()
           }
         }}
-        className="fixed bottom-6 right-6 z-50 w-16 h-16 bg-primary hover:bg-primary/90 rounded-full shadow-2xl flex items-center justify-center transition-all duration-300 hover:scale-110"
+        className="fixed bottom-6 right-6 z-50 w-16 h-16 bg-whatsapp-green hover:bg-whatsapp-green-dark rounded-full shadow-2xl flex items-center justify-center transition-all duration-300 hover:scale-110"
         aria-label="Contact us on WhatsApp"
       >
-        <MessageCircle className="w-8 h-8 text-primary-foreground" />
+        <MessageCircle className="w-8 h-8 text-white" />
 
         <span className="absolute -top-1 -right-1 w-4 h-4 bg-red-500 rounded-full border-2 border-background animate-pulse"></span>
       </button>
     </>
-  );
+  )
 }
