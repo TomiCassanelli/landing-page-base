@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { WhatsAppButton } from "@/components/whatsapp-button";
+import { event as trackFacebookEvent } from "@/app/lib/fbpixel";
 
 type ContactFormSectionProps = {
   title: string;
@@ -120,6 +121,15 @@ export function ContactFormSection({
     if (!validateForm()) return;
 
     setIsSubmitting(true);
+
+    trackFacebookEvent("Lead", {
+      content_name: "ContactForm",
+      full_name: formData.fullName,
+      email: formData.email,
+      phone: formData.phone,
+      city: formData.city,
+      country: formData.country,
+    });
 
     // Construct WhatsApp message
     const message = [
